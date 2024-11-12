@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Enby Pabst - Graphiste UI/UX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* GLOBAL STYLES */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotham', sans-serif;
+      height: 100%;
+    
+      overflow-x: hidden;
+    }
+
+   /* GRADIENT BACKGROUND WITH GRAIN EFFECT */
+.gradient-bg {
+  background: linear-gradient(120deg, #173242, #1c6772, #cfe0da, #ffbb1c, #ff0000,#ffbb1c, #cfe0da,#1c6772,#173242);
+  background-size: 200% 200%; /* Increased size for smoother transition */
+  height: 100vh;
+  animation: gradientAnimation 20s ease-in-out infinite; /* Slowed down transition */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed; /* Keeps the gradient in place when scrolling */
+
+}
+
+/* SMOOTH AND SEAMLESS GRADIENT ANIMATION */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    /* TEXT STYLE FOR HEADER */
+    .header {
+      padding: 400px 100px;
+      text-align: center;
+      color: #000;
+      font-weight: bold;
+      font-size: 3em ;
+      line-height: 1.2;
+    }
+
+    .header .name {
+      font-size: 2.3em;
+      color: #000;
+    }
+
+    .header .title {
+      font-size: 1em;
+      color: #000;
+    }
+
+    /* PAGE CONTAINER WITH TWO COLUMNS */
+    .cv-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* LEFT COLUMN */
+    .left-column {
+      width: 48%;
+    }
+
+    /* RIGHT COLUMN */
+    .right-column {
+      width: 48%;
+    }
+
+    /* SECTION STYLES */
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    hr {
+      border: 1px solid #000;
+      margin: 10px 0;
+
+    }
+
+    .content {
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .contact-info {
+      font-size: 1.2em;
+    }
+
+    .contact-info a{
+      text-decoration: none;
+      color: black;
+      transition: all 0.6s ease-in;
+      transition: all 0.8s ease-out;
+    }
+
+    .contact-info a:hover{
+      text-decoration: underline;
+      font-size: 1.2em;
+    }
+
+    /* BUTTON PORTFOLIO */
+    .portfolio-button {
+      background-color: black;
+      color: white;
+      padding: 15px 500px;
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 40px;
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (max-width: 768px) { 
+      .header .name {
+      font-size: 1.7em;
+      color: #000;
+    }
+
+    .header .title {
+      font-size: 0.85em;
+      color: #000;
+    }
+      .cv-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-column,
+      .right-column {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .header {
+        padding: 20px;
+      }
+
+      .portfolio-button {
+        width: 180px;
+        padding: 10px 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Gradient Background -->
+  <div class="gradient-bg"></div>
+
+  <!-- Header Section -->
+  <div class="header">
+    <div class="name">Enby Pabst</div>
+    <div class="title">Graphiste & UI/UX Designer</div>
+  </div>
+
+  <!-- CV Container -->
+  <div class="cv-container">
+
+    <!-- Left Column -->
+    <div class="left-column">
+      <div class="section">
+        <h2>CONTRAT</h2>
+        <hr>
+        <div class="content">
+          Recherche une alternance pour une durée de 2 ans.<br>
+          Rythme : 2 semaines / 2 semaines<br>
+          <span class="highlight">Disponible immédiatement.</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>CONTACT</h2>
+        <hr>
+        <div class="content contact-info">
+          LinkedIn: <a href="https://www.linkedin.com/in/enby-pabst-38222b2aa/" target="_blank">Enby Pabst</a><br>
+          Email:<a href="mailto:enbypabst@gmail.com?cc=eva.pabst@edu.gobelins.fr,autre.email@example.com">enbypabst@gmail.com</a><br>
+          Téléphone: <span class="highlight">07 71 05 39 53</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>COMPÉTENCES</h2>
+        <hr>
+        <div class="content">
+          • Figma<br><br>
+          • Culture des Arts Appliqués, du Design et de  l’Histoire de l’Art<br><br>
+          • Maîtrise avancée d'Illustrator, Photoshop & InDesign<br><br>
+          • Pratique active dans After Effects, Dimension<br><br>
+          • Dessin, réflexion et idéation à travers le croquis<br><br>
+          • Création digitale et interactive<br><br>
+          • Autonomie <br><br>
+          • Diligence<br><br>
+          • Adaptabilité<br><br>
+          • En cours d’acquisition des bases dans Blender et • Cinema 4D en autodidacte<br><br>
+          • Pratique d’outils No-Code<br><br>
+          • Passionné par le UX Design<br><br>
+          • Design Thinking
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <div class="section">
+        <h2>EXPRIÉNCES</h2>
+        <hr>
+        <div class="content">
+          <span class="highlight">Hyperscope</span><br>
+          Stage d’insertion dans le milieu entrepreneurial - Décembre 2023<br><br>
+          <span class="highlight">BriSport</span><br>
+          Entraînement de jeunes gymnastes - 2017-2020<br><br>
+          <span class="highlight">Studio Création Design et Communication</span><br>
+          Stage d’observation - Mars 2019
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>ÉDUCATION</h2>
+        <hr>
+        <div class="content">
+          <span class="highlight">Gobelins Paris</span><br>
+          Diplôme National des Métiers des Arts et du Design Mention Graphisme, parcours designer UI/UX - interface et narration interactives - 2023-2026<br><br>
+          <span class="highlight">La Martinière Diderot, Académie de Lyon</span><br>
+          Baccalauréat Science et Technologie du Design et des Arts Appliqués avec mention - 2021-2023<br><br>
+          <span class="highlight">Tumo Lyon</span><br>
+          Centre extrascolaire de créations numériques - 2022-2023
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>LANGUES</h2>
+        <hr>
+        <div class="content">
+          <span class="highlight">Français</span> - Langue Maternelle<br><br>
+          <span class="highlight">Anglais</span> - Bilingue
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Portfolio Button -->
+  <a href="https://indd.adobe.com/view/65b07e0d-7885-4f97-8bb1-b62b9ea707f2" class="portfolio-button" target="_blank">PORTFOLIO</a>
+</body>
+</html>
